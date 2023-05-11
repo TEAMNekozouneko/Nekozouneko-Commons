@@ -51,13 +51,18 @@ public abstract class AbsItemStackBuilder<B extends AbsItemStackBuilder<B, M>, M
     }
 
     @Override
-    public B clone() throws CloneNotSupportedException {
-        B builder = (B) super.clone();
+    public B clone() {
+        try {
+            B builder = (B) super.clone();
 
-        builder.stack = stack.clone();
-        builder.meta = (M) meta.clone();
+            builder.stack = stack.clone();
+            builder.meta = (M) meta.clone();
 
-        return builder;
+            return builder;
+        }
+        catch (CloneNotSupportedException ignored) {
+            return null;
+        }
     }
 
     public @NotNull B amount(int amount) {
