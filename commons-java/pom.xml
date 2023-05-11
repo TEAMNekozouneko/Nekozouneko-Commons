@@ -9,6 +9,7 @@
         <version>1.0</version>
     </parent>
 
+    <name>Nekozouneko-Commons Java</name>
     <artifactId>commons-java</artifactId>
 
     <properties>
@@ -16,5 +17,13 @@
         <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>31.1-jre</version>
+        </dependency>
+    </dependencies>
 
 </project>

@@ -9,6 +9,7 @@
         <version>1.0</version>
     </parent>
 
+    <name>Nekozouneko-Commons Spigot</name>
     <artifactId>commons-spigot</artifactId>
 
     <properties>
@@ -29,6 +30,13 @@
     </repositories>
 
     <dependencies>
+        <dependency>
+            <groupId>net.nekozouneko.commons</groupId>
+            <artifactId>commons-java</artifactId>
+            <version>1.0</version>
+            <scope>provided</scope>
+        </dependency>
+
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
