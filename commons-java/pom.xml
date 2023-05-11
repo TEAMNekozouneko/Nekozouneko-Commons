@@ -6,7 +6,7 @@
     <parent>
         <groupId>net.nekozouneko.commons</groupId>
         <artifactId>commons-root</artifactId>
-        <version>1.0</version>
+        <version>1.0-SNAPSHOT</version>
     </parent>
 
     <name>Nekozouneko-Commons Java</name>
