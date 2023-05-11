@@ -23,15 +23,15 @@ public class ItemStackBuilder extends AbsItemStackBuilder<ItemStackBuilder, Item
         super(itemStack, itemMeta);
     }
 
-    public static ItemStackBuilder of(@NotNull Material material) {
+    public static @NotNull ItemStackBuilder of(@NotNull Material material) {
         return new ItemStackBuilder(material);
     }
 
-    public static ItemStackBuilder of(@NotNull ItemStack itemStack) {
+    public static @NotNull ItemStackBuilder of(@NotNull ItemStack itemStack) {
         return new ItemStackBuilder(itemStack);
     }
 
-    public static ItemStackBuilder of(@NotNull ItemStack itemStack, @NotNull ItemMeta itemMeta) {
+    public static @NotNull ItemStackBuilder of(@NotNull ItemStack itemStack, @NotNull ItemMeta itemMeta) {
         return new ItemStackBuilder(itemStack, itemMeta);
     }
 
