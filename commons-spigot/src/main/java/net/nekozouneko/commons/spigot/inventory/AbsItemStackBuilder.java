@@ -34,7 +34,7 @@ public abstract class AbsItemStackBuilder<B extends AbsItemStackBuilder<B, M>, M
     protected M meta;
 
     protected AbsItemStackBuilder(@NotNull Material material) {
-        Preconditions.checkArgument(material.isAir(), "Air materials is not supported.");
+        Preconditions.checkArgument(!material.isAir(), "Air materials is not supported.");
 
         stack = new ItemStack(material);
         meta = (M) stack.getItemMeta();
