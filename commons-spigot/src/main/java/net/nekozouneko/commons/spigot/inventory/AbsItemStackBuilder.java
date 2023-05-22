@@ -51,7 +51,7 @@ public abstract class AbsItemStackBuilder<B extends AbsItemStackBuilder<B, M>, M
     }
 
     @Override
-    public B clone() {
+    public @Nullable B clone() {
         try {
             B builder = (B) super.clone();
 
