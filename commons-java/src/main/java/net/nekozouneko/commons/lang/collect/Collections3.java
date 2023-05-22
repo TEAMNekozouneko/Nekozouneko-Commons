@@ -23,7 +23,7 @@ public final class Collections3 {
         return Collections.frequency(collect, elem) == collect.size();
     }
 
-    @Nullable
+
     public static <E> E getOrNull(@NotNull Collection<E> collect, @Range(from = 0, to = Integer.MAX_VALUE) int pos) {
         Preconditions.checkArgument(collect != null, "Collection is null");
         Preconditions.checkArgument(pos >= 0, "pos is negative");
